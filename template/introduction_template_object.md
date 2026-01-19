@@ -1,0 +1,117 @@
+---
+tags:
+  - type/resource
+  - status/growing
+description: 讲讲xxx
+---
+<%* 
+// 初始化
+let title = tp.file.title;
+if (title.startsWith('Untitled')) {
+title = await tp.system.prompt('Enter the title');
+if (!title) return;
+}
+if (title == '') {
+title = 'Untitled'
+} else {
+await tp.file.rename(title);
+}
+await tp.file.move('/z/' + title)
+// 更新 updated
+if (!tp.frontmatter.created) { tp.frontmatter.created = tp.file.creation_date("YYYY-MM-DDTHH:mm:ss"); } tp.frontmatter.updated = tp.date.now("YYYY-MM-DDTHH:mm:ss"); 
+%>
+
+# <% title %> 
+
+## 1. 概览（Overview）
+
+* **这是一个什么东西？** （型号、类型）
+* **主要用途/定位？** （例如：家用WiFi 6路由器、中端5G手机、专业图形设计显示器）
+* **核心竞争力/最大亮点**
+* **一句话总结**
+
+---
+
+## 2. 核心规格与技术（Key Specifications & Technology）
+
+### 硬件参数（Hardware Specs）
+* **处理器/芯片：** 品牌、型号
+* **内存/存储：** 容量、类型
+* **接口：** 数量、类型（例如：USB-C、HDMI 2.1、RJ45、SIM卡槽）
+* **尺寸/重量/能耗**
+
+### 特定技术（Product-Specific Tech）
+* **路由器：** Wi-Fi标准（$802.11ax/6E$）、Mesh支持、端口速率
+* **手机：** 屏幕材质/分辨率、摄像头规格、电池容量、快充协议
+* **显示器：** 面板类型（IPS/OLED）、分辨率、刷新率、色域（$sRGB/DCI-P3$）
+
+---
+
+## 3. 设置与初始化（Setup & Initial Configuration）
+
+* **开箱检查：** 包装内容、外观检查
+* **连接步骤：** （例如：路由器连接光猫、手机首次开机流程、显示器校色）
+* **基础配置：** 首次开机向导、网络设置、基本系统设置
+* **固件/系统版本：** 初始版本号
+
+---
+
+## 4. 日常使用与功能（Daily Usage & Features）
+
+* **核心功能流程：** （例如：路由器设置访客网络、手机拍照/应用多开、显示器切换输入源/分屏）
+* **操作系统/软件界面：** 主要菜单、设置路径
+* **特色功能：** 独有的软件/硬件功能（例如：手机的AI功能、显示器的HDR模式）
+* **使用限制：** 官方规定的限制（例如：最大连接设备数）
+
+---
+
+## 5. 固件与维护（Firmware & Maintenance）
+
+* **固件/系统更新：** 检查更新的方法、手动更新步骤
+* **恢复出厂设置：** 方法（硬重置/软重置）
+* **备份/数据迁移** （针对手机等）
+* **日常清洁与保养**
+
+---
+
+## 6. 常见问题（FAQ）
+
+* Q1: …
+* Q2: …
+
+---
+
+## 7. 故障诊断与排错（Troubleshooting & Debug）
+
+* **故障现象：** （例如：无法联网、屏幕不亮、设备发烫）
+* **排查步骤（Checklist）：**
+    1.  检查电源/连接线
+    2.  检查指示灯状态
+    3.  重启/软重置
+* **联系支持/送修流程**
+
+---
+
+## 8. 最佳实践与优化（Best Practices & Optimization）
+
+* **性能优化技巧：** （例如：路由器摆放位置、手机后台应用管理、显示器最佳设置）
+* **安全注意点：** （例如：修改默认密码、系统权限设置）
+* **配件/扩展推荐：** （例如：推荐的手机壳/膜、路由器网线）
+
+---
+
+## 9. 资源与参考（Resources）
+
+* 官方产品页面/说明书
+* 驱动/软件下载地址
+* 官方/非官方用户社区
+* 评测视频/专业文章
+
+---
+
+## 10. 个人笔记（Personal Notes）
+
+* 实际使用体验（优点/缺点）
+* 自定义设置/隐藏功能
+* 后续关注点（例如：等待特定固件更新）
+

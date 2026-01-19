@@ -1,0 +1,18 @@
+{
+  "obsidian-another-quick-switcher:search-command_file-name-fuzzy-search": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "F"
+    }
+  ],
+  "obsidian-another-quick-switcher:search-command_tags-search": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "T"
+    }
+  ]
+}

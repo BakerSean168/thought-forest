@@ -1,0 +1,42 @@
+# ---------------------
+# 1. 必须忽略的核心杂音 (避免冲突的关键)
+# ---------------------
+# 你的工作区状态（打开了哪些文件、滚动条位置、面板布局）
+# 这些在不同设备（手机 vs 电脑）上完全不同，同步必冲突
+.obsidian/workspace
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# 缓存文件
+.obsidian/cache
+.obsidian/*cache*
+
+# ---------------------
+# 2. 插件相关的特定忽略
+# ---------------------
+# 忽略 Obsidian Git 插件自身的状态（避免“我在备份我的备份状态”这种死循环）
+.obsidian/plugins/obsidian-git/data.json
+
+# 如果你不想同步最近打开的文件历史
+.obsidian/recent-files.json
+
+# ---------------------
+# 3. 系统垃圾文件
+# ---------------------
+# Mac 系统产生
+.DS_Store
+.DS_Store?
+
+# Windows 系统产生
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ---------------------
+# 4. 可选：大文件 (防止 GitHub 报错)
+# ---------------------
+# 如果你有很多视频或大压缩包，建议取消下面的注释
+# *.mp4
+# *.mov
+# *.zip
+# *.rar
